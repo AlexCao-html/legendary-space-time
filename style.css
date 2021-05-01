@@ -1,0 +1,103 @@
+.line {
+    width: 30px;
+    height: 5px;
+    background: #000;
+    margin: 5px 0;
+    -webkit-border-radius: 25%;
+       -moz-border-radius: 25%;
+            border-radius: 25%;
+}
+
+.lineX1 {
+    -webkit-transform: rotateZ(45deg) translateY(5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+       -moz-transform: rotateZ(45deg) translateY(5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+        -ms-transform: rotate(45deg) translateY(5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+         -o-transform: rotateZ(45deg) translateY(5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+            transform: rotateZ(45deg) translateY(5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+}
+
+.lineX2 {
+    -webkit-transform: rotateZ(-45deg) translateY(-5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+       -moz-transform: rotateZ(-45deg) translateY(-5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+        -ms-transform: rotate(-45deg) translateY(-5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+         -o-transform: rotateZ(-45deg) translateY(-5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+            transform: rotateZ(-45deg) translateY(-5px) translateX(2px) scaleX(1.2) scaleY(1.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 30px 0 0 30px;
+    -webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.6, -0.28, 0.32, 1.275);
+}
+
+nav.toggled {
+    top: 0;
+}
+
+.X {
+    position: fixed;
+    display: none;
+    z-index: 99999;
+    top: 1vh;
+    left: 1vw;
+    cursor: pointer;
+}
+
+.X.toggled {
+    display: block;
+}
+
+.B {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.container {
+    cursor: pointer;
+}
+
+a {
+    color: #00f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #f00;
+}
+
+.insideLink {
+    display: list-item;
+    list-style: disc;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.insideLink::marker {
+    color: #000;
+}
